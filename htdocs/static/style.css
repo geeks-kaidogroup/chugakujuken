@@ -1,0 +1,336 @@
+@charset "UTF-8";
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* General */
+.float-list, .wrap, .cf {
+  *zoom: 1;
+}
+.float-list:after, .wrap:after, .cf:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+.float-list li {
+  float: left;
+}
+
+/* Base */
+body {
+  font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'Meiryo', 'メイリオ', 'sans-serif';
+}
+
+a {
+  color: #253059;
+  text-decoration: underline;
+}
+a:hover, a:active, a:focus {
+  text-decoration: none;
+}
+
+/* Layout */
+/*==============================
+共通要素
+==============================*/
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.l-main .breadlist > p {
+  margin: 0 0 25px;
+  font-size: 14px;
+  line-height: 1;
+}
+.l-main .breadlist > p a {
+  text-decoration: none;
+}
+.l-main .breadlist > p a:hover {
+  text-decoration: underline;
+}
+
+.pagetitle {
+  margin: 0 0 25px 0;
+  font-size: 26px;
+  color: #333;
+}
+
+/*==============================
+コンテンツ
+==============================*/
+.l-contents {
+  padding: 18px 16px 32px 14px;
+  border: solid 1px #c4c4c4;
+  width: 698px;
+}
+.l-contents .footbnr img {
+  margin: 0 0 20px 0;
+}
+.l-contents .footbnr .bnr-headline img {
+  margin: 0 0 10px 0;
+}
+
+/*==============================
+講師一覧
+==============================*/
+.teachers {
+  color: #333;
+  font-size: 14px;
+}
+.teachers .navi-subject, .teachers .headline-subject {
+  margin: 0 0 20px 0;
+}
+.teachers .teachers-list {
+  margin: 0 -16px 0 0;
+}
+.teachers .teachers-list .entry {
+  margin: 0 17px 40px 0;
+  width: 340px;
+  min-height: 256px;
+}
+.teachers .teachers-list .entry .profile {
+  display: table;
+  margin: 0 0 14px 0;
+}
+.teachers .teachers-list .entry .profile .photo, .teachers .teachers-list .entry .profile .description {
+  display: table-cell;
+  vertical-align: top;
+}
+.teachers .teachers-list .entry .profile .photo {
+  padding: 0 6px 0 0;
+}
+.teachers .teachers-list .entry .profile .description {
+  width: 170px;
+  line-height: 1.4;
+}
+.teachers .teachers-list .entry .profile .description .course {
+  margin: 0 0 6px 0;
+}
+.teachers .teachers-list .entry .profile .description .position {
+  font-size: 12px;
+  line-height: 2;
+}
+.teachers .teachers-list .entry .profile .description .name {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.teachers .teachers-list .entry .profile .description .name .honorific {
+  font-size: 15px;
+}
+.teachers .teachers-list .entry .profile .description .history, .teachers .teachers-list .entry .profile .description .sales {
+  color: #b00101;
+}
+.teachers .teachers-list .entry .profile .description .sales {
+  font-weight: 700;
+}
+.teachers .teachers-list .entry .link {
+  width: 348px;
+  margin: 0 0 -6px 0;
+}
+.teachers .teachers-list .entry .link li {
+  margin: 0 6px 0 0;
+}
+
+/*==============================
+講師ページ
+==============================*/
+.teacher {
+  color: #333;
+  font-size: 14px;
+}
+.teacher .subject-tag {
+  display: inline-block;
+  margin: 0 0 0 20px;
+}
+.teacher .red {
+  color: #a01831;
+}
+.teacher .navi-tab {
+  margin: 0 0 40px 0;
+  width: 698px;
+  height: 45px;
+  background: url(assets/img/teacher/teacher_tab_bar.png) no-repeat center bottom;
+}
+.teacher .navi-tab ul {
+  margin: 0 -11px 0 0;
+}
+.teacher .navi-tab ul li {
+  margin: 0 11px 0 0;
+}
+.teacher .navi-tab ul li a {
+  display: block;
+  width: 166px;
+  height: 45px;
+}
+.teacher .navi-tab ul li .tab:hover img {
+  visibility: hidden;
+}
+.teacher .navi-tab ul li .tab-plofile:hover {
+  background: url(assets/img/teacher/teacher_tab_01_on.png) no-repeat;
+}
+.teacher .navi-tab ul li .tab-teaching:hover {
+  background: url(assets/img/teacher/teacher_tab_02_on.png) no-repeat;
+}
+.teacher .navi-tab ul li .tab-taught:hover {
+  background: url(assets/img/teacher/teacher_tab_03_on.png) no-repeat;
+}
+.teacher .navi-tab ul li .tab-interview:hover {
+  background: url(assets/img/teacher/teacher_tab_04_on.png) no-repeat;
+}
+.teacher .headline-voice {
+  margin: 0 0 40px 0;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-align: center;
+  color: #670001;
+}
+.teacher .profile {
+  display: table;
+}
+.teacher .profile .photo, .teacher .profile .text {
+  display: table-cell;
+  vertical-align: top;
+}
+.teacher .profile .photo {
+  padding: 0 20px 0 0;
+}
+.teacher .profile .text p {
+  display: list-item;
+  list-style-type: square;
+  margin: 0 0 30px 20px;
+  line-height: 1.8;
+}
+.teacher .profile .text .summary {
+  font-weight: 700;
+}
+.teacher .message {
+  margin: 0 0 40px 0;
+  padding: 20px 20px 17px 18px;
+  border: solid 1px #cecece;
+  background: #fbfbf4;
+}
+.teacher .message .headline {
+  margin: 0 0 16px 0;
+  padding: 0 0 0 16px;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #670000;
+  background: url(assets/img/teacher/teacher_marker.png) no-repeat left center;
+}
+.teacher .message p {
+  line-height: 1.8;
+}
+.teacher .background {
+  margin: 0 0 30px 0;
+}
+.teacher .background .description {
+  float: left;
+  width: 470px;
+}
+.teacher .background .description .name {
+  margin: 35px 0 25px 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+.teacher .background .description .name .ruby {
+  font-size: 12px;
+  font-weight: 400;
+}
+.teacher .background .description .element {
+  border-bottom: dashed 1px #a37a82;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.teacher .background .description p {
+  margin: 0 0 20px 0;
+  line-height: 1.8;
+}
+.teacher .background .description .caution {
+  margin: 40px 0 0 0;
+}
+.teacher .background .photo {
+  float: right;
+}
+.teacher .footbtn {
+  margin: 0 -0 40px 0;
+  text-align: center;
+}
+.teacher .footbtn ul {
+  margin: 0 -22px 40px 0;
+}
+.teacher .footbtn ul li {
+  margin: 0 22px 0 0;
+}
+.teacher .pager {
+  padding: 0 20px 0 20px;
+  width: 658px;
+}
+.teacher .pager li {
+  display: inline;
+  width: 33%;
+}
+.teacher .pager .left, .teacher .pager .right {
+  padding: 13px 0 0 0;
+}
+.teacher .pager .right {
+  text-align: right;
+}
